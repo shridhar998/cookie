@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - Cookie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100%;
+            background: violet;
+        }
+        
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            font-weight: 50;
+            text-align: center;
+            margin: 1rem 0 3rem;
+            font-family: 'Hind', sans-serif;
+        }
+        
+        .title {
+            color: lime;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Set a new cookie</h1>
+        <label>Key</label>
+        <input type="text" id="one"></input>
+        <label>Value</label>
+        <input type="text" id="two"></input>
+        <button onclick="btn1()">ADD</button>
+        <h1>Get value of the cookie</h1>
+        <label>Key</label>
+        <input type="text" id="three"></input>
+        <button onclick="btn2()">GET</button>
+        <div id="set"></div>
+        <h1>Delete the cookie</h1>
+        <label>Key</label>
+        <input type="text" id="four"></input>
+        <button onclick="btn3()">Delete</button>
+        <h1>List all cookies</h1>
+        <p id="disp"></p>
+    </div>
+    <script src="js_cookie getset.js"></script>
+</body>
